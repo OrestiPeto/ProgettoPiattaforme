@@ -46,7 +46,17 @@ Il back-end è composto da JS e alcuni moduli:
   
   ## Utilizzo del servizio
   
+  ### Interfaccia
+  
   ![2023-02-12 (4)](https://user-images.githubusercontent.com/124849452/218340258-71c7297c-4771-49a4-8a22-6d721252a12b.png)
+  
+  ### inserimento
+  
+  L'uttente dovrà compilare i seguenti campi per aggiungere il museo
+  
+  ![2023-02-12 (7)](https://user-images.githubusercontent.com/124849452/218340472-e941eef1-d3d1-4b2a-b872-81d107d179c6.png)
+
+  
 
  
 
