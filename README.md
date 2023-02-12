@@ -18,3 +18,8 @@ Il sito web permetterà di:
 
 La piattaforma è basata su NodeJs ed i dati uttilizzati sono forniti tramite file CSV senza apportarli nessuna modifica.
 Tale scelta e dovuta dal fatto che i file CSV e composta come un dato che rappresenta un punto d'intersse.
+
+Il back-end è composto da JS e alcuni moduli:
+- express: per usare NodeJs
+- fs: per manipolare i file
+- ejs: per effettuare il render delle pagine HTML con JS
