@@ -29,11 +29,18 @@ Il back-end è composto da JS e alcuni moduli:
 - progetto-piattaforme-oresti-peto.glitch.me \
   Endpoint GET che restituisce la pagina iniziale \
   INPUT: niente \
-  OUTPUT: index.html
+  OUTPUT: views/index.html
  
 - progetto-piattaforme-oresti-peto.glitch.me/dati \
   Endpoin GET che fornisce tutti i dati contenuti nel file Musei.csv \
   INPUT: niente \
-  OUTPUT: musei.csv
+  OUTPUT: views/musei.csv
+  
+- progetto-piattaforme-oresti-peto.glitch.me/inserisci \
+  Endpoint GET che fornisce la pagina web per l'inserimento di nuovi musei \
+  INPUT: niente \
+  OUTPUT: views/inserisci.html
+  
+- 
  
 
