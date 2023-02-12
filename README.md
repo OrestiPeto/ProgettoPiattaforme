@@ -41,6 +41,7 @@ Il back-end è composto da JS e alcuni moduli:
   INPUT: niente \
   OUTPUT: views/inserisci.html
   
+Per alcuni endpoint è stato scelto di utilizzare una funzione di conversione da CSV ad array, presa dal seguente link: (https://www.bennadel.com/blog/1504-ask-ben-parsing-csv-strings-with-javascript-exec-regular-expression-command.htm)per poter lavorare meglio con i dati.
   ## Servizio online
   https://progetto-piattaforme-oresti-peto.glitch.me
   
