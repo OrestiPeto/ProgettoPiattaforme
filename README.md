@@ -8,7 +8,7 @@ MATRICOLA: 30833
 
 Le Marche è una regione poco conosciuta ma la sua storia non è da sottovalutare, l'obbietivo della piattaforma e quello di mostrare i musei
 presenti nella sua regione così da scoprirli.
-La piattaforma uttilizza i dati forniti dalla regione [(http://www.datiopen.it)](http://www.datiopen.it) attraverso delle API ed un sito web.
+La piattaforma uttilizza i dati forniti dalla regione http://www.datiopen.it attraverso delle API ed un sito web.
 
 Il sito web permetterà di:
 - cercare i musei presenti nella regione
@@ -42,7 +42,6 @@ Il back-end è composto da JS e alcuni moduli:
   OUTPUT: views/inserisci.html
   
   ## Servizio online
-  
-  [https://progetto-piattaforme-oresti-peto.glitch.me] (https://progetto-piattaforme-oresti-peto.glitch.me)
+  https://progetto-piattaforme-oresti-peto.glitch.me
  
 
