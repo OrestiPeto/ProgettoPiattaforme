@@ -31,49 +31,36 @@
         }
     </style>
   <body>
-    <div class="container-fluid text-center"; style="background-color: blue; color: white;">
-      <h1>Musei</h1>
-      <h4>cerca i musei interesati</h4>
-  </div>
     <script>
-      function search() {
-        // Ottieni la query dell'utente dalla barra di ricerca
-        var query = document.getElementById("searchbar").value;
-        
-        // Leggere i dati dal file CSV e inserirli in un array
-        var data = "nome,cognome\nJohn,Doe\nJane,Doe\nJim,Smith";
-        var rows = data.split("\n");
-        var headers = rows[0].split(",");
-        var results = [];
-        for (var i = 1; i < rows.length; i++) {
-          var cells = rows[i].split(",");
-          var result = {};
-          for (var j = 0; j < headers.length; j++) {
-            result[headers[j]] = cells[j];
-          }
-          results.push(result);
+      async function cerca(type) {
+        alert("bottone cliccato");
+        let daScrivere = "didascalia e nominativo = ";
+        if (type === 0) { //ricerca per indice
+          let indice = document.getElementById("indice").value;
+          const risultato = await fetch('/indicemuseo/' + indice);
+          txt = await risultato.text();
+          if (risultato.ok) {
+            daScrivere += txt;
+          } else daScrivere = "ERRORE: " + txt;
+        } else if (type === 1) {
+          let comune = document.getElementById("comune").value;
+          const risultato = await fetch('/comunemuseo/' + comune);
+          txt = await risultato.text();
+          if (risultato.ok) {
+            daScrivere += txt;
+          } else daScrivere = "ERRORE: " + txt;
         }
-        
-        // Trova i risultati corrispondenti alla query dell'utente
-        var filteredResults = [];
-        for (var i = 0; i < results.length; i++) {
-          if (results[i].nome.includes(query) || results[i].cognome.includes(query)) {
-            filteredResults.push(results[i]);
-          }
-        }
-        
-        // Mostra i risultati filtrati
-        var output = "";
-        for (var i = 0; i < filteredResults.length; i++) {
-          output += filteredResults[i].nome + " " + filteredResults[i].cognome + "<br>";
-        }
-        document.getElementById("output").innerHTML = output;
-      }
+        document.getElementById("output").innerHTML = daScrivere;
+-      }
     </script>
-  <input type="text" id="searchbar">
-  <button onclick="search()">Cerca</button>
-  <div id="output"></div>
-
-
-
+    Cerca per indice: <input type="number" name="indice" id="indice"> <button onclick="cerca(0)">
+    Ricerca per indice
+    </button><br>
+    Cerca per comune <input type="text" name="comune" id="comune"> <button onclick="cerca(1)">
+    Ricerca per comune
+    </button><br>
+    <div id="output">
+      
+    </div>
   </body>
+</html>

@@ -26,26 +26,35 @@
     }
   </style>
   <body>
-    <div class="container-fluid text-center"; style="background-color: blue; color: white;">
+    <div class="container-fluid text-center" style="background-color: blue; color: white;">
         <h1>Musei</h1>
         <h4>Inserisci i seguenti dati per aggiungere Musei</h4>
     </div>
     <div id="button">
-      <button onclick="window.location.href ='/';"> Back</button> 
+      <button onclick="window.location.href ='/';"> Indietro </button> 
     </div>
     <br>
-    <div class="barra_ricerca";>
-      <form action="" method="POST" class="impl">
-        <input class="input" type="txt" id="denominazionee" name="Denominazione" placeholder="Denominazione" required> 
-        <input class="input" type="txt" id="comunee" name="Comune" placeholder="Comune" required> <br>
-        <input class="input" type="txt" id="indirizzoo" name="Indirizzo" placeholder="Indirizzo"> 
-        <input class="input" type="txt" id="civicoo" name="Civico" placeholder="Civico"> <br>
-        <input class="input" type="txt" id="telefonoo" name="Telefono" placeholder="Telefono"> 
-        <input class="input" type="txt" id="emaill" name="Email" placeholder="Email"> <br>
-        <input class="input" type="txt" id="latitudinee" name="Latitudine" placeholder="Latitudine"> 
-        <input class="input" type="txt" id="longitudinee" name="Longitudine" placeholder="Longitudine"> <br>
+    <div class="barra_ricerca">
+      <!-- Didascalia;Denominazione;Localita;Indirizzo;Civico;Comune;Telefono;Email;SitoWeb;Categoria;Categoria Secondaria;Latitudine;Longitudine;orario;noteorario;Ingresso -->
+      <form action="nuovo_museo" method="get" class="impl">
+        <input class="input" type="txt" id="didascalia" name="didascalia" placeholder="Didascalia" required>
+        <input class="input" type="txt" id="denominazione" name="denominazione" placeholder="Denominazione" required> <br> 
+        <input class="input" type="txt" id="localita" name="localita" placeholder="Localita" required> 
+        <input class="input" type="txt" id="indirizzo" name="indirizzo" placeholder="Indirizzo"> <br>
+        <input class="input" type="txt" id="civico" name="civico" placeholder="Civico"> 
+        <input class="input" type="txt" id="comune" name="comune" placeholder="Comune" required> <br>
+        <input class="input" type="txt" id="telefono" name="telefono" placeholder="Telefono"> 
+        <input class="input" type="txt" id="email" name="email" placeholder="Email"> <br>
+        <input class="input" type="txt" id="sitoweb" name="sitoweb" placeholder="Sito Web"> 
+        <input class="input" type="txt" id="categoria" name="categoria" placeholder="Categoria"> <br>
+        <input class="input" type="txt" id="categoria_sec" name="categoria_sec" placeholder="Categoria Secondaria">
+        <input class="input" type="txt" id="latitudine" name="latitudine" placeholder="Latitudine"> <br>
+        <input class="input" type="txt" id="longitudine" name="longitudine" placeholder="Longitudine"> 
         <input class="input" type="txt" id="orario" name="orario" placeholder="orario"> <br>
-        <button id="btn" class="btn">Aggiungi</button>
+        <input class="input" type="txt" id="noteorario" name="noteorario" placeholder="Note Orario"> 
+        <input class="input" type="txt" id="ingresso" name="ingresso" placeholder="Ingresso">
+        <br>
+        <button id="btn" type = "submit" class="btn">Aggiungi</button>
       </form>
     </div>
 
