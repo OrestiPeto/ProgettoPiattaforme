@@ -20,11 +20,13 @@ app.get("/", (req, res) => {
   res.render("./views/index.html");
 });
 
+// fornisce i dati puri
 app.get('/dati', (req, res) => {
     console.log("Richiesta dei dati puri.");
     res.type("text/csv").sendFile(__dirname + "/views/Musei.csv");
 });
 
+visualizzazione pagine web
 app.get("/inserisci", (req, res) => {
     res.render("./views/inserisci.html");
 });
@@ -34,7 +36,7 @@ app.get("/cerca", (req, res) => {
 });
 
 //------------------------------------------------------------------------
-//Didascalia;Denominazione;Localita;Indirizzo;Civico;Comune;Telefono;Email;SitoWeb;Categoria;Categoria Secondaria;Latitudine;Longitudine;orario;noteorario;Ingresso
+//Restituisce il dato alla posizione specificata
 app.get("/nuovo_museo", (req, res) => {
   let museo = ";"+ req.query.didascalia +  ";" + req.query.denominazione + ";" + req.query.localita + ";" + req.query.indirizzo + ";" + req.query.civico + 
       ";" + req.query.comune + ";" + req.query.telefono + ";" + req.query.email + ";" + req.query.sitoweb + ";" + req.query.categoria + ";" +
@@ -54,11 +56,11 @@ app.get("/indicemuseo/:indice", (req, res) => {
   }
 });
 
-
 const listener = app.listen(process.env.PORT, () => {
   console.log("App in ascolto nella porta " + listener.address().port);
 });
 
+// funzione per convertire da CSV ad array
 function CSVToArray( strData, strDelimiter ){
 		strDelimiter = (strDelimiter || ",");
 		var objPattern = new RegExp(
