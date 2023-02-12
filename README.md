@@ -26,8 +26,10 @@ Il back-end è composto da JS e alcuni moduli:
 
 ## Documentazione API
 
--progetto-piattaforme-oresti-peto.glitch.me 
+- progetto-piattaforme-oresti-peto.glitch.me 
   Endpoint GET che restituisce la pagina iniziale \
   INPUT: niente \
   OUTPUT: index.html
+ 
+- progetto-piattaforme-oresti-peto.glitch.me
 
