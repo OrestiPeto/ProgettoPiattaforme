@@ -41,6 +41,12 @@ Il back-end è composto da JS e alcuni moduli:
   INPUT: niente \
   OUTPUT: views/inserisci.html
   
+- progetto-piattaforme-oresti-peto.glitch.me/indicemuseo \
+  Endpoint che fornisce un museo specifico attraverso il suo indice di posizionamento \
+  INPUT: numero maggiore di 0 \
+  OUTPUT: indice specifico di posizionamento \
+  Nel caso non esistesse l'elemento o il parametro fosse scritto male viene restituito l'HTTP response code 400.
+  
 Per alcuni endpoint è stato scelto di utilizzare una funzione di conversione da CSV ad array, presa dal seguente link: (https://www.bennadel.com/blog/1504-ask-ben-parsing-csv-strings-with-javascript-exec-regular-expression-command.htm) per poter lavorare meglio con i dati.
   ## Servizio online
   https://progetto-piattaforme-oresti-peto.glitch.me
