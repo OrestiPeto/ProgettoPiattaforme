@@ -26,7 +26,7 @@ app.get('/dati', (req, res) => {
     res.type("text/csv").sendFile(__dirname + "/views/Musei.csv");
 });
 
-visualizzazione pagine web
+//visualizzazione pagine web
 app.get("/inserisci", (req, res) => {
     res.render("./views/inserisci.html");
 });
@@ -35,8 +35,7 @@ app.get("/cerca", (req, res) => {
   res.render("./views/cerca.html");
 });
 
-//------------------------------------------------------------------------
-//Restituisce il dato alla posizione specificata
+// La richiesta permette di aggiungere un nuovo punto di interesse tramite form html.
 app.get("/nuovo_museo", (req, res) => {
   let museo = ";"+ req.query.didascalia +  ";" + req.query.denominazione + ";" + req.query.localita + ";" + req.query.indirizzo + ";" + req.query.civico + 
       ";" + req.query.comune + ";" + req.query.telefono + ";" + req.query.email + ";" + req.query.sitoweb + ";" + req.query.categoria + ";" +
@@ -47,6 +46,7 @@ app.get("/nuovo_museo", (req, res) => {
   res.render("./views/inserisci.html");
 })
 
+//Restituisce il dato alla posizione specificata
 app.get("/indicemuseo/:indice", (req, res) => {
   let musei = CSVToArray(fs.readFileSync("./views/Musei.csv"));
   if (!isNaN(req.params.indice) && musei.length > req.params.indice && req.params.indice > 0) {
