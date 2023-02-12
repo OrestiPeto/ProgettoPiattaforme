@@ -41,7 +41,7 @@ Il back-end è composto da JS e alcuni moduli:
   INPUT: niente \
   OUTPUT: views/inserisci.html
   
-Per alcuni endpoint è stato scelto di utilizzare una funzione di conversione da CSV ad array, presa dal seguente link: (https://www.bennadel.com/blog/1504-ask-ben-parsing-csv-strings-with-javascript-exec-regular-expression-command.htm)per poter lavorare meglio con i dati.
+Per alcuni endpoint è stato scelto di utilizzare una funzione di conversione da CSV ad array, presa dal seguente link: (https://www.bennadel.com/blog/1504-ask-ben-parsing-csv-strings-with-javascript-exec-regular-expression-command.htm) per poter lavorare meglio con i dati.
   ## Servizio online
   https://progetto-piattaforme-oresti-peto.glitch.me
   
@@ -56,6 +56,16 @@ Per alcuni endpoint è stato scelto di utilizzare una funzione di conversione da
   L'uttente dovrà compilare i seguenti campi per aggiungere il museo
   
   ![2023-02-12 (7)](https://user-images.githubusercontent.com/124849452/218340472-e941eef1-d3d1-4b2a-b872-81d107d179c6.png)
+  
+  ## Postman 
+  
+  ### Ricerca
+  
+  Per la ricerca dei musei nella regione delle marche utilizziamo postman come su immagine \
+  es:
+  ![2023-02-12 (9)](https://user-images.githubusercontent.com/124849452/218340815-211722fb-2e89-4230-a3e2-ff07a2200c35.png)
+
+  
 
   
 
