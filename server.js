@@ -2,17 +2,18 @@ const express = require("express");
 const app = express();
 const fs = require('fs');
 
+// inizializzazione tramite express e richieste json
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-
+// configuro la cartella views come principale e setup per la visualizzazione dei file html
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 app.set("views", __dirname);
 
 
-//............................................................................
+//........................ENDPOINT GET........................................
 
 // Endpoint visualizzazione pagine html.
 app.get("/", (req, res) => {
