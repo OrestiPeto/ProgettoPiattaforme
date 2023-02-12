@@ -23,3 +23,22 @@ Il back-end è composto da JS e alcuni moduli:
 - express: per usare NodeJs
 - fs: per manipolare i file
 - ejs: per effettuare il render delle pagine HTML con JS
+
+Per poter aggiungere un nuovo museo bisogna inserire:
+- didascalia
+- denominazione
+- località
+- indirizzo
+- civico
+- comune
+- telefono
+- email
+- sito web
+- categoria
+- categoria secondaria
+- latitudine
+- longitudine
+- orario
+- note orario
+- ingresso
+- 
