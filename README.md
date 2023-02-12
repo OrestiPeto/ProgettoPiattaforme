@@ -43,5 +43,9 @@ Il back-end è composto da JS e alcuni moduli:
   
   ## Servizio online
   https://progetto-piattaforme-oresti-peto.glitch.me
+  
+  ## Utilizzo del servizio
+  
+  ![Test Image](
  
 
