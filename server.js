@@ -31,9 +31,6 @@ app.get("/inserisci", (req, res) => {
     res.render("./views/inserisci.html");
 });
 
-app.get("/cerca", (req, res) => {
-  res.render("./views/cerca.html");
-});
 
 // La richiesta permette di aggiungere un nuovo punto di interesse tramite form html.
 app.get("/nuovo_museo", (req, res) => {
