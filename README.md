@@ -24,21 +24,10 @@ Il back-end è composto da JS e alcuni moduli:
 - fs: per manipolare i file
 - ejs: per effettuare il render delle pagine HTML con JS
 
-Per poter aggiungere un nuovo museo bisogna inserire:
-- didascalia
-- denominazione
-- località
-- indirizzo
-- civico
-- comune
-- telefono
-- email
-- sito web
-- categoria
-- categoria secondaria
-- latitudine
-- longitudine
-- orario
-- note orario
-- ingresso
+## Documentazione API
+
+-progetto-piattaforme-oresti-peto.glitch.me 
+  Endpoint GET che restituisce la pagina iniziale \
+  INPUT: niente \
+  OUTPUT: index.html
 
